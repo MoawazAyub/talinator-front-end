@@ -23,3 +23,8 @@
   color: green;
   font-size: 22px;
 }
+
+.list-card-column .star-image {
+  height: 29px;
+  width: 45px;
+}
