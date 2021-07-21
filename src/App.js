@@ -1,8 +1,9 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import AppNavbar from './components/navbar';
+import AppNavbar from './components/navbar/navbar';
 import { Container } from 'react-bootstrap'
 import React, { useState } from 'react';
+import List from './components/shared/list/list'
 
 function App() {
 
@@ -17,7 +18,7 @@ function App() {
         price: 40, // in €
       },
       {
-        id: 1,
+        id: 2,
         name: "Water Pistol",
         explanation:
           "Want to have some fun in the waterpark? Shoot your friends with this harmless water pistol",
@@ -27,7 +28,7 @@ function App() {
         price: 30, // in €
       },
       {
-        id: 1,
+        id: 3,
         name: "Inflatable Pool", 
         explanation: "An amazing and fun pool for you to get your feet wet in.",
         pictureLink:
@@ -41,7 +42,8 @@ function App() {
     <div className="App">
       <AppNavbar/>
       <Container className="mt-5">
-        <h1>Our Products:</h1>
+        <h1>Our Products</h1>
+        <List items={items}/>
       </Container>
     </div>
   );

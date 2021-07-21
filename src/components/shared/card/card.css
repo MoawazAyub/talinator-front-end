@@ -1,0 +1,25 @@
+.list-card-column img {
+  height: 200px;
+}
+
+.list-card-column .list-inner-column {
+  margin: 16px;
+}
+
+.list-card-column .list-inner-row {
+  margin: 16px;
+}
+
+.list-card-column .list-inner-row .row {
+  padding: 10px;
+  text-align: left;
+}
+
+.list-card-column .list-item-name {
+  font-weight: bold;
+}
+
+.list-card-column .list-item-price {
+  color: green;
+  font-size: 22px;
+}
