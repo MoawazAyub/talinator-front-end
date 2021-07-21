@@ -1,10 +1,7 @@
-import NavbarBrand from './NavbarBrand';
-import './App.css';
-
-function navbar() {
+function NavbarBrand(props) {
   return (
-    <NavbarBrand> <b> INTELLISTOR </b> </NavbarBrand>
+    <b {...props} > INTELLISTOR </b>
   );
 }
 
-export default navbar;
+export default NavbarBrand;
